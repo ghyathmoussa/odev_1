@@ -1,0 +1,301 @@
+/*************Gobal style*************/
+
+*{
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/***************NavBar*****************/
+.gh-navC{
+    z-index: 1100;
+    width: 100%;
+    top:20px;
+    margin-left: 100px;
+}
+.gh-nav{
+    background-color: transparent;
+    top:0;
+    left: 0;
+    z-index: 999;
+}
+.gh-nav .ghNav-items ul li a{
+    transition: .3s ease-in-out;
+    color:#85898D;
+}
+.gh-nav .ghNav-items ul li a:hover{
+    color:#000;
+}
+.righNavC{
+    position: absolute;
+    right:0
+}
+.rightIcon{
+    padding-left:20px;
+    margin-left: 10px;
+    color:#333;
+    font-size: 24px;
+    transition: .3s ease-in-out;
+}
+.rightIcon:hover{
+    text-decoration: none;
+    color:#717fe0;
+}
+
+/***********category section*************/
+.pt-80{
+    padding-bottom: 30px;
+    margin-top: 50px;
+
+}
+.cat_containers{
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.cat{
+    position: relative;
+    border: 1px solid #e6e6e6;
+    display: block;
+
+}
+.cat img{
+    width: 100%;
+}
+
+.linCat{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
+    padding:34px 38px;
+    touch-action: manipulation;
+}
+
+.linCat:hover{
+    text-decoration: none;
+    color:#fff;
+    background-color: rgba(103,117,214,0.9);
+}
+.linCat:hover .span1,.linCat:hover .span2{color:#fff}
+.cat-title{
+    flex-direction: column;
+    align-items: flex-start;
+    display: flex;
+}
+.cat-title .span1{
+    font-size: 28px;
+    line-height: 1.1;
+    color:#333;
+    transition: all .4s;
+    padding-bottom: 8px;
+}
+.cat-title .span2{
+    font-size: 14px;
+    line-height: 1.7;
+    color:#555;
+    transition: all .4s;
+    padding-bottom: 8px;
+}
+.txt-hide{
+    border-bottom: 2px solid #fff;
+    overflow: hidden;
+    transform: scaleX(0);
+    transition: all .5s;
+    padding-bottom: 4px;
+}
+.linCat:hover .txt-hide,.linCat:hover .hd{
+    transform: scaleX(1);
+    transform: translateY(0);
+}
+.txt-hide .hd{
+    transform: translateY(250%);
+    font-size: 15px;
+    line-height: 1.466667;
+    text-transform: uppercase;
+    color:#fff;
+    transition: all .9s;
+
+}
+.linCat:hover .hd{color:#fff}
+
+/***********middle Title************/
+.mb-50{
+    margin-bottom: 50px;
+}
+.sec3title{
+    padding: 50px 0;
+}
+.sec3title .title{
+    font-size: 36px;
+    font-weight: bolder;
+}
+.type{
+    margin-top: 20px;
+}
+.horizontal{
+    list-style: none;
+    display: inline-block;
+}
+.horizontal li{
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 20px;
+    margin: 0;
+
+}
+.horizontal li a{
+    color:#888;
+    text-decoration: none;
+    transition: all .5s;
+}
+.horizontal li a:hover{
+    color:#000;
+    border-bottom: 1px solid #000;
+}
+.horizontal .active a{
+    border-bottom: 1px solid #000;
+    color:#000
+}
+
+/* buttons style */
+.filterBtn{
+    background-color: transparent;
+    padding:10px 20px;
+    border:1px solid #888;
+    transition: all .5s;
+
+}
+.filterBtn:hover{
+    background-color:#717fe0;
+    color:#fff;
+    border:none
+}
+.filterBtn:hover .btnTxt{color:#fff}
+.filterBtn .btnTxt{
+    color:#888
+}
+/*product card*/
+.card{border:none}
+.card img{
+    width: 100%;
+    height: 100%;
+}
+.hidBtn{
+   
+    text-align: center;
+    transform: scaleX(0);
+    transition: all .5s;
+    transform: translateY(0);
+    cursor: pointer;
+    z-index: -1;
+}
+.card:hover .hidBtn{
+    z-index: 1;
+    transform: scaleX(1);
+    transform: translateY(-250%);
+}
+
+.hidBtn a{
+    width: 150px;
+    background-color: #eee;
+    padding: 10px 20px;
+    color:#000;
+    text-decoration: none;
+    transition: all .5s;
+}
+.hidBtn:hover a{
+    background-color: #000;
+    color:#fff
+}
+.txtB{
+    font-size: 18px;
+    font-weight: 400;
+    color:#95a5a6
+}
+.txtB p span i{
+    float:right;
+    transition: all .3s;
+}
+.txtB p span i:hover{
+    color:#717fe0;
+    cursor: pointer;
+}
+.txtB .price{
+    font-size: 14px;
+}
+.btnL{
+    padding: 10px 40px;
+    background-color: #e6e6e6;
+    border-color: #e6e6e6;
+    align-items: center;
+    justify-content: center;
+    color:#000;
+    text-decoration: none;
+    transition: all .4s;
+}
+.btnL:hover{
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+}
+
+/**********Footer***********/
+footer{
+    padding: 50px 0;
+    background-color: #000;
+    color:#fff
+}
+footer .container h4{
+    font-weight: bold;
+}
+footer .container ul{list-style: none;}
+footer .container ul li{
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+footer .container ul li a{
+    color:#fff;
+    text-decoration: none;
+    color:#888;
+    transition: all .3s;
+}
+.horizontalF li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.horizontalF li i{
+    font-size: 24px;
+}
+footer .container ul li a:hover{    color:#717fe0}
+
+footer .container p{
+    color:#888;
+    font-size: 14px;
+}
+.final input{
+    background-color: transparent;
+    border: none;
+    color:#888;
+    padding:10px 40px 10px 0px;
+    border-bottom: 2px solid #888;
+}
+.final div button{
+    background-color: #717fe0;
+    padding:10px 30px;
+    margin-top: 20px;
+    border-radius: 23px;
+    border: none;
+    transition: all .4s;
+}
+.final div button:hover{
+    background-color: #fff;
+    color:#717fe0
+}
